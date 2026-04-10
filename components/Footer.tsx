@@ -25,7 +25,7 @@ export default function Footer() {
                 Ginecología
               </p>
             </div>
-            <p className="text-neutral-500 font-inter font-light text-xs leading-relaxed">
+            <p className="text-neutral-400 font-inter font-light text-xs leading-relaxed">
               Especialista Jerarquizada en Ginecología. Atención integral,
               personalizada y de alto nivel en Bahía Blanca.
             </p>
@@ -33,7 +33,7 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <p className="text-[10px] tracking-[0.25em] uppercase text-neutral-600 font-inter mb-6">
+            <p className="text-[10px] tracking-[0.25em] uppercase text-neutral-500 font-inter mb-6">
               Secciones
             </p>
             <nav className="flex flex-col gap-3">
@@ -51,7 +51,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <p className="text-[10px] tracking-[0.25em] uppercase text-neutral-600 font-inter mb-6">
+            <p className="text-[10px] tracking-[0.25em] uppercase text-neutral-500 font-inter mb-6">
               Contacto
             </p>
             <div className="flex flex-col gap-4">
@@ -79,7 +79,7 @@ export default function Footer() {
                 />
                 <span className="font-inter text-sm">@dra.yamiladaud</span>
               </a>
-              <div className="flex items-center gap-3 text-neutral-500">
+              <div className="flex items-center gap-3 text-neutral-400">
                 <div className="w-[15px] flex-shrink-0" />
                 <span className="font-inter text-sm">
                   Moreno 416, Bahía Blanca
@@ -91,10 +91,10 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-neutral-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-neutral-600 font-inter text-xs">
+          <p className="text-neutral-500 font-inter text-xs">
             © 2026 Dra. Yamila Daud. Todos los derechos reservados.
           </p>
-          <p className="text-neutral-600 font-inter text-xs">
+          <p className="text-neutral-500 font-inter text-xs">
             Bahía Blanca, Buenos Aires, Argentina
           </p>
         </div>
