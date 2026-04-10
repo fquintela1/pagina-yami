@@ -58,11 +58,85 @@ export default function Testimonials() {
   return (
     <section
       id="testimonios"
-      className="py-24 md:py-36 px-8 md:px-16 lg:px-24 xl:px-32 bg-[#F0ECE6]"
+      className="py-24 md:py-36 px-8 md:px-16 lg:px-24 xl:px-32 bg-[#F0ECE6] relative overflow-hidden"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="max-w-3xl mx-auto">
+      {/* Pattern background */}
+      <svg
+        className="absolute inset-0 w-full h-full text-rose-400 pointer-events-none"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <pattern id="bgPattern" x="0" y="0" width="210" height="210" patternUnits="userSpaceOnUse">
+            {/* Vulva 1 */}
+            <g transform="translate(22,30) rotate(-8) scale(0.9)">
+              <path d="M0,-12 C-9,-9 -10,-2 -10,4 C-10,9 -5,12 0,13 C5,12 10,9 10,4 C10,-2 9,-9 0,-12Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+              <path d="M0,-4 C-3,-1 -4,3 -4,7 C-4,10 -2,12 0,13" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" fill="none"/>
+              <path d="M0,-4 C3,-1 4,3 4,7 C4,10 2,12 0,13" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" fill="none"/>
+              <path d="M-3,-6 C-1,-10 1,-10 3,-6" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" fill="none"/>
+              <circle cx="0" cy="-15" r="2.8" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+            </g>
+            {/* Heart 1 */}
+            <g transform="translate(88,16) rotate(12) scale(0.85)">
+              <path d="M0,7 C0,7 -8,1 -8,-2.5 C-8,-6 -5.5,-7.5 -3,-7.5 C-1,-7.5 0,-4.5 0,-4.5 C0,-4.5 1,-7.5 3,-7.5 C5.5,-7.5 8,-6 8,-2.5 C8,1 0,7 0,7Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+            </g>
+            {/* Breasts 1 */}
+            <g transform="translate(155,26) rotate(-5) scale(0.85)">
+              <path d="M-15,7 C-15,7 -14,-7 -5,-7 C4,-7 4,7 4,7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+              <path d="M-4,7 C-4,7 -3,-7 6,-7 C15,-7 16,7 16,7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+              <circle cx="-5" cy="-1" r="2" stroke="currentColor" strokeWidth="1.1" fill="none"/>
+              <circle cx="6" cy="-1" r="2" stroke="currentColor" strokeWidth="1.1" fill="none"/>
+            </g>
+            {/* Heart 2 */}
+            <g transform="translate(192,90) scale(0.62)">
+              <path d="M0,7 C0,7 -8,1 -8,-2.5 C-8,-6 -5.5,-7.5 -3,-7.5 C-1,-7.5 0,-4.5 0,-4.5 C0,-4.5 1,-7.5 3,-7.5 C5.5,-7.5 8,-6 8,-2.5 C8,1 0,7 0,7Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+            </g>
+            {/* Vulva 2 */}
+            <g transform="translate(56,108) rotate(14) scale(0.75)">
+              <path d="M0,-12 C-9,-9 -10,-2 -10,4 C-10,9 -5,12 0,13 C5,12 10,9 10,4 C10,-2 9,-9 0,-12Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+              <path d="M0,-4 C-3,-1 -4,3 -4,7 C-4,10 -2,12 0,13" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" fill="none"/>
+              <path d="M0,-4 C3,-1 4,3 4,7 C4,10 2,12 0,13" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" fill="none"/>
+              <path d="M-3,-6 C-1,-10 1,-10 3,-6" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" fill="none"/>
+              <circle cx="0" cy="-15" r="2.8" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+            </g>
+            {/* Breasts 2 */}
+            <g transform="translate(120,100) rotate(8) scale(0.8)">
+              <path d="M-15,7 C-15,7 -14,-7 -5,-7 C4,-7 4,7 4,7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+              <path d="M-4,7 C-4,7 -3,-7 6,-7 C15,-7 16,7 16,7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+              <circle cx="-5" cy="-1" r="2" stroke="currentColor" strokeWidth="1.1" fill="none"/>
+              <circle cx="6" cy="-1" r="2" stroke="currentColor" strokeWidth="1.1" fill="none"/>
+            </g>
+            {/* Heart 3 */}
+            <g transform="translate(16,165) rotate(-10) scale(0.7)">
+              <path d="M0,7 C0,7 -8,1 -8,-2.5 C-8,-6 -5.5,-7.5 -3,-7.5 C-1,-7.5 0,-4.5 0,-4.5 C0,-4.5 1,-7.5 3,-7.5 C5.5,-7.5 8,-6 8,-2.5 C8,1 0,7 0,7Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+            </g>
+            {/* Vulva 3 */}
+            <g transform="translate(174,150) rotate(-6) scale(0.78)">
+              <path d="M0,-12 C-9,-9 -10,-2 -10,4 C-10,9 -5,12 0,13 C5,12 10,9 10,4 C10,-2 9,-9 0,-12Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+              <path d="M0,-4 C-3,-1 -4,3 -4,7 C-4,10 -2,12 0,13" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" fill="none"/>
+              <path d="M0,-4 C3,-1 4,3 4,7 C4,10 2,12 0,13" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" fill="none"/>
+              <path d="M-3,-6 C-1,-10 1,-10 3,-6" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" fill="none"/>
+              <circle cx="0" cy="-15" r="2.8" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+            </g>
+            {/* Breasts 3 */}
+            <g transform="translate(68,175) rotate(5) scale(0.72)">
+              <path d="M-15,7 C-15,7 -14,-7 -5,-7 C4,-7 4,7 4,7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+              <path d="M-4,7 C-4,7 -3,-7 6,-7 C15,-7 16,7 16,7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+              <circle cx="-5" cy="-1" r="2" stroke="currentColor" strokeWidth="1.1" fill="none"/>
+              <circle cx="6" cy="-1" r="2" stroke="currentColor" strokeWidth="1.1" fill="none"/>
+            </g>
+            {/* Heart 4 */}
+            <g transform="translate(134,182) rotate(8) scale(0.65)">
+              <path d="M0,7 C0,7 -8,1 -8,-2.5 C-8,-6 -5.5,-7.5 -3,-7.5 C-1,-7.5 0,-4.5 0,-4.5 C0,-4.5 1,-7.5 3,-7.5 C5.5,-7.5 8,-6 8,-2.5 C8,1 0,7 0,7Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+            </g>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#bgPattern)" opacity="0.3"/>
+      </svg>
+
+      <div className="max-w-3xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-[11px] tracking-[0.3em] uppercase text-rose-400 font-inter mb-6">
