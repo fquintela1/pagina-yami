@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section
       id="contacto"
-      className="py-24 md:py-36 px-8 md:px-16 lg:px-24 xl:px-32"
+      className="py-24 md:py-36 px-8 md:px-16 lg:px-24 xl:px-32 bg-[#FAF8F5]"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
@@ -36,7 +36,7 @@ export default function Contact() {
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-neutral-900 text-white px-8 py-4 text-[11px] tracking-[0.22em] uppercase font-inter hover:bg-neutral-700 transition-all duration-300 group mb-12"
+              className="inline-flex items-center gap-3 bg-[#1A0F18] text-white px-8 py-4 text-[11px] tracking-[0.22em] uppercase font-inter hover:bg-rose-950 transition-all duration-300 group mb-12"
             >
               <MessageCircle
                 size={14}

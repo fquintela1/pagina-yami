@@ -12,7 +12,7 @@ const NAV_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-950 text-white px-8 md:px-16 lg:px-24 xl:px-32 py-16">
+    <footer className="bg-[#1A0F18] text-white px-8 md:px-16 lg:px-24 xl:px-32 py-16">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* Brand */}
@@ -90,7 +90,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-neutral-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-rose-900/25 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-neutral-500 font-inter text-xs">
             © 2026 Dra. Yamila Daud. Todos los derechos reservados.
           </p>
