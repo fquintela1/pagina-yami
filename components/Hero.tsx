@@ -17,7 +17,7 @@ export default function Hero() {
       </div>
 
       {/* Left: Text content */}
-      <div className="flex-1 flex flex-col justify-center px-8 md:px-16 lg:px-24 xl:px-32 pt-32 pb-16 lg:pt-0 lg:pb-0 order-2 lg:order-1">
+      <div className="flex-1 flex flex-col justify-center px-8 md:px-16 lg:px-24 xl:px-32 pt-12 pb-16 lg:pt-0 lg:pb-0 order-2 lg:order-1">
         <div className="max-w-xl">
           <p className="text-[11px] tracking-[0.32em] uppercase text-rose-400 font-inter mb-8">
             Especialista Jerarquizada en Ginecología

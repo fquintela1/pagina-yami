@@ -49,7 +49,7 @@ export default function Testimonials() {
 
   useEffect(() => {
     if (paused) return;
-    const interval = setInterval(next, 5500);
+    const interval = setInterval(next, 2750);
     return () => clearInterval(interval);
   }, [paused, next]);
 
